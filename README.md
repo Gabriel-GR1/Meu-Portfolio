@@ -1,4 +1,4 @@
-===================================== Como Visualizar =====================================
+============================= Como Visualizar =============================
 
 Todo o projeto está pronto, porém, como não está hospedado você terá que baixar os arquivos e abrir.
 
@@ -6,7 +6,7 @@ Todo o projeto está pronto, porém, como não está hospedado você terá que b
 
 Como é algo mais simples, fiz ele todo à base de HTML e CSS.
 
-======================================== Pastas ========================================
+============================= Pastas =============================
 
 - CSS
 
