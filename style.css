@@ -1,0 +1,387 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.flex {
+  display: flex;
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.nome {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: white;
+}
+header h1 {
+  line-height: 86%;
+  color: white;
+  font-size: 35px;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 8px rgb(247, 247, 247);
+}
+
+span > h4 {
+  font-size: 23px;
+}
+header {
+  padding-top: 25px;
+}
+
+header > .interface {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+header a {
+  display: inline-block;
+  /* Inline Block serve para dar função pro hover */
+  text-decoration: none;
+  /*tira a linha embaixo da li*/
+  transition: 0.3s;
+  /*adiciona tempo para fazer o zoom*/
+  color: white;
+  /* Muda a cor dos tópicos*/
+}
+
+header a:hover {
+  transform: scale(1.3);
+}
+
+header ul {
+  list-style-type: none;
+  /*tira as bolinhas da lista*/
+}
+
+header li {
+  display: inline-block;
+  /* bota a li(lista) em linha */
+  padding-left: 75px;
+  font-size: 20px;
+}
+
+.contato button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: whitesmoke;
+  border: 10;
+  border-radius: 50px;
+  /*Radius serve para encurvar a borda e a borda serve para afinar */
+  cursor: pointer;
+  /* quando passa o ponteiro aparece pra clicar */
+  transition: 0.3s;
+}
+
+h2.titulo {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+section.sobremim .contato button:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 8px rgb(247, 247, 247);
+}
+
+/*Sobre mim */
+
+section.sobremim {
+  padding: 150px 4%;
+  /*ajuda a centralizar a imagem */
+}
+
+.introducao {
+  color: white;
+}
+
+section.sobremim .flex /*coloca duas para estilizar somete a que ta dentro da principal */ {
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.introducao h1 {
+  line-height: 20px;
+  font-size: 35px;
+}
+
+.introducao p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.sobremim .imagem img {
+  position: relative;
+  /*posição da imagem relativa á keyframe*/
+  animation: efeito 2s ease-in-out infinite alternate;
+  /*como vai ser a animação */
+}
+
+section.sobremim .contato {
+  line-height: 60px;
+}
+
+@keyframes efeito {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/*especialidades */
+
+section.projetos {
+  padding: 40px 4%;
+}
+
+section.projetos .flex {
+  justify-content: space-around;
+}
+.projetos .box-especialidades {
+  padding: 40px 112px 70px 100px;
+  color: white;
+  margin-top: 50px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.projetos .box-especialidades:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px grey;
+}
+.projetos .box-especialidades i {
+  font-size: 80px;
+}
+
+.projetos .box-especialidades h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.projetos .box-especialidades ul {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+/* Objetivos */
+
+section.objetivo {
+  padding: 20px 4%;
+  padding-bottom: 50px;
+}
+
+section.objetivo .flex {
+  display: center;
+}
+
+.objetivo .txt-objetivo {
+  color: white;
+  box-align: center;
+  padding-top: 80px;
+  font-size: 20px;
+}
+
+.objetivo .txt-objetivo h2 {
+  margin: 30px 0;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.objetivo .txt-objetivo .btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(167, 165, 165);
+  font-size: 35px;
+  cursor: pointer;
+  margin: 20px 10px;
+  transition: 0.3s;
+}
+.objetivo .txt-objetivo .btn-social i {
+  background-color: rgb(167, 165, 165);
+}
+
+section.linha {
+  box-shadow: 0 0 30px 10px whitesmoke;
+}
+section.conquistas .flex {
+  justify-content: space-around;
+}
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-color: purple;
+}
+
+/* ESTILO FALE COMIGO */
+
+section.contato {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: rgb(78, 78, 78);
+  border: none;
+  outline: none;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+form textarea {
+  resize: none;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* RODAPÉ */
+.interface .line-footer .logo-footer button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(167, 165, 165);
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0px 10px;
+  transition: 0.3s;
+}
+.interface .line-footer .logo-footer i {
+  background-color: rgb(167, 165, 165);
+}
+
+footer .flex {
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+footer .line-footer {
+  padding: 50px 0;
+}
+footer .line-footer p i {
+  color: white;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+footer .line-footer p a {
+  color: white;
+}
+
+.borda {
+  border-top: 2px solid white;
+  padding-bottom: 10px;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 1025px) {
+  .flex {
+    flex-direction: column;
+  }
+  .sobremim .imagem {
+    margin-bottom: 30px;
+  }
+  .sobremim .flex {
+    flex-direction: column-reverse;
+  }
+
+  /*SOBREMIM*/
+  .sobremim .imagem img {
+    width: 100%;
+    height: 75%;
+  }
+
+  .introducao h1 {
+    line-height: 25px;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  /*CABEÇALHO*/
+  .menu,
+  .interface .contato {
+    display: none;
+  }
+
+  /*OBJETIVO*/
+
+  /*.objetivo .img-objetivo img{
+        width: 100%;
+        height: 100%;
+    }*/
+  .objetivo .img-objetivo img {
+    display: none;
+  }
+  .objetivo .txt-objetivo h2{
+    text-align: center;
+  }
+  .objetivo .flex ul {
+    padding: 20px 8%;
+  }
+  .objetivo .flex li {
+    padding: 20px 8%;
+  }
+  /*RODAPÉ */
+
+  footer .flex{
+    flex-direction: column;
+  }
+
+  footer .line-footer{
+    text-align: center;
+  }
+
+  footer .line-footer p{
+    margin-bottom: 25px;
+  }
+
+  .line-footer .borda {
+    margin-bottom: 15px;
+  }
+}
