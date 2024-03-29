@@ -31,6 +31,6 @@ As frameworks utilizadas nesse projeto incluem Bootstrap para CSS
   Irei ocasionalmente ajustar a responsividade tanto para telas maiores, como também para as menores, até esta atualização não foi encontado nenhum erro na responsividade.
 
 - Adicionar a parte de projetos
-Por ainda ser iniciante, não tenho feito projetos o suficiente para justificar a incrementação da aba, porém, parte do código já está feito e implementado (só ver a parte que está em <!---->).
+Por ainda ser iniciante, não tenho feito projetos o suficiente para justificar a incrementação da aba, porém, parte do código já está feito e implementado (só ver a parte que está em verde).
 
 - Corrigir erros e implementar novos efeitos visuais
